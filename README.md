@@ -1,12 +1,15 @@
-# NAME
+# kutil-Jlog
 
 ## About
 
-*
+* javaのloggingライブラリ
+* ファイル書き込みのカスタマイズ
+* 配列やエラー時の出力を楽に
 
 ## Requirement
 
 * java
+* kutil-java
 
 ## Author
 
