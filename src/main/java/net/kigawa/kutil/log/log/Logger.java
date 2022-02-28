@@ -1,6 +1,5 @@
 package net.kigawa.kutil.log.log;
 
-import net.kigawa.kutil.kutil.app.Formatter;
 import net.kigawa.kutil.kutil.file.Extension;
 import net.kigawa.kutil.kutil.interfaces.LoggerInterface;
 import net.kigawa.kutil.kutil.interfaces.Module;
