@@ -10,8 +10,9 @@ public class Formatter extends java.util.logging.Formatter {
     public String format(LogRecord record) {
         StringBuffer sb = new StringBuffer();
         calendar.setTimeInMillis(record.getMillis());
-        sb.append(Calendar.MONTH).append("-").append(Calendar.DAY_OF_MONTH).append("-").append(Calendar.HOUR_OF_DAY)
-                .append("-").append(Calendar.MINUTE).append("-").append(Calendar.SECOND).append("[")
+        sb.append(calendar.get(Calendar.MONTH)).append("-").append(calendar.get(Calendar.DAY_OF_MONTH))
+                .append("-").append(calendar.get(Calendar.HOUR_OF_DAY)).append("-")
+                .append(calendar.get(Calendar.MINUTE)).append("-").append(calendar.get(Calendar.SECOND)).append("[")
                 .append(record.getLevel().getName()).append("] |").append(record.getMessage()).append("\n");
         return sb.toString();
     }
