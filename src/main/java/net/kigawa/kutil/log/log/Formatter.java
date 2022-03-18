@@ -17,7 +17,7 @@ public class Formatter extends java.util.logging.Formatter {
                 .append("-").append(calendar.get(Calendar.HOUR_OF_DAY)).append("-")
                 .append(calendar.get(Calendar.MINUTE)).append("-").append(calendar.get(Calendar.SECOND))
                 .append(StringColor.GREEN).append("[").append(record.getLevel().getName()).append("] |")
-                .append(StringColor.RESET).append(record.getMessage()).append("\n");
+                .append(StringColor.RESET).append(record.getMessage()).append(StringColor.RESET).append("\n");
         return sb.toString();
     }
 }
