@@ -1,5 +1,7 @@
 package net.kigawa.kutil.log.log;
 
+import net.kigawa.kutil.log.log.fomatter.EmptyFormatter;
+
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;

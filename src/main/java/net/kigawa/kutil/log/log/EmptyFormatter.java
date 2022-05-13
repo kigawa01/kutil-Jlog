@@ -1,11 +1,8 @@
 package net.kigawa.kutil.log.log;
 
-import java.util.logging.Formatter;
-import java.util.logging.LogRecord;
-
-public class EmptyFormatter extends Formatter {
-    @Override
-    public String format(LogRecord record) {
-        return record.getMessage();
-    }
+/**
+ * @deprecated use formatter.EmptyFormatter
+ */
+public class EmptyFormatter extends net.kigawa.kutil.log.log.fomatter.EmptyFormatter
+{
 }
