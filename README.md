@@ -8,7 +8,21 @@
 
 ## Usage
 
+```pom.xml
+<!-- pom.xml -->
+<!-- https://github.com/kigawa01/kutil-java-log -->
+    <dependencies>
+        <dependency>
+            <groupId>net.kigawa.kutil</groupId>
+            <artifactId>log</artifactId>
+            <version>2.0</version>
+        </dependency>
+    </dependencies>
+
+```
+
 ```java
+// Main.java
 import net.kigawa.kutil.log.log.KLogger;
 
 class Main
@@ -35,11 +49,16 @@ class Main
     /*
             when input objects, call toString() and output
      */
+    
+    logger.info(new Throwable());
+    /*
+            when input throwable, out stack trace
+     */
   }
 }
 ```
 
-## Requirement
+## Dependency
 
 * java
 * kutil-java
